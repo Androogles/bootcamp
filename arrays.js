@@ -19,8 +19,8 @@
 // console.log(frugter);
 
 // Øvelse 7
-let personer = [["Andreas", 24, "Alberslund"], ["Henning", 35, "Smørum"], ["Anders", 28, "Glostrup"]];
-console.log(personer);
+// let personer = [["Andreas", 24, "Alberslund"], ["Henning", 35, "Smørum"], ["Anders", 28, "Glostrup"]];
+// console.log(personer);
 
 
 

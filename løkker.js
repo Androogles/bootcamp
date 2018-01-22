@@ -55,4 +55,18 @@
 //     console.log("idag er det " + dage + " Nr " + index);
 // });
 
+// Øvelse 7 
+// let navne = ["Andreas", "Marcus", "Marc", "Nicolai"];
+
+// navne.forEach(function (navn) {
+//     console.log("Mit Navn er: " + navn);
+// });
+
+// Øvelse 8
+// let navne = ["Volbeat", "Eminem", "Xibit", "Mozart"];
+
+// navne.forEach(function (navn, index) {
+//     console.log(navn + " Nr " + index);
+// });
+
 

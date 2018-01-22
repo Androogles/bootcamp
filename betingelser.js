@@ -38,21 +38,21 @@
 // }
 
 // Øvelse 6
-// let name = "Egon";
-// switch (name) {
-//    case "Egon":
-//       console.log(name, 'han har en plan');
-//       break;
-//    case "Finn":
-//       console.log(name, 'ønsker medvind på cykelstierne');
-//       break;
-//    case "Georg":
-//       console.log(name, 'får en lys ide');
+let name = "Egon";
+switch (name) {
+    case "Egon":
+        console.log(name, 'han har en plan');
+        break;
+    case "Finn":
+        console.log(name, 'ønsker medvind på cykelstierne');
+        break;
+    case "Georg":
+        console.log(name, 'får en lys ide');
 
-//    case "Hjælper":
-//       console.log(name, 'er lille');
-//       break;
-//    default:
-//       console.log(name, 'er ukendt');
-//       break;
-// }
+    case "Hjælper":
+        console.log(name, 'er lille');
+        break;
+    default:
+        console.log(name, 'er ukendt');
+        break;
+}

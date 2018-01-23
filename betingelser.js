@@ -1,9 +1,9 @@
 // Betingelser
 
 // Øvelse 2
-// let bolean = false;
+// let bolean = true;
 
-// if (bolean == true) {
+// if (bolean) {
 //     console.log("hej verden");
 // }
 // else {
@@ -24,18 +24,20 @@
 // console.log(result);
 
 // Øvelse 5
-// let Læskedrik = "Cola";
+let Læskedrik = "Cola";
 
-// if (Læskedrik == "FaxeKondi") {
-//     console.log("Det min yndlings sodavand");
-// }
-// else if (Læskedrik == "Cola") {
-//     console.log("Det ikke min, yndlingsodavand");
-// }
+if (Læskedrik == "FaxeKondi") {
+    console.log("Det min yndlings sodavand");
+}
+else if (Læskedrik == "Cola") {
+    console.log("Det ikke min, yndlingsodavand");
+}
 
-// else if (Læskedrik == "Sprite") {
-//     console.log("Heller ikke den");
-// }
+else if (Læskedrik == "Sprite") {
+    console.log("Heller ikke den");
+} else {
+    console.log("ukendt");
+}
 
 // Øvelse 6
 let name = "Egon";

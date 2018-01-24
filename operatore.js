@@ -1,4 +1,4 @@
-//Operatorer
+//Operatorer Opgaver
 
 //Øvelse 2
 

@@ -38,6 +38,11 @@ YES / NO
 ON / OFF
 TRUE / FALSE
 
+```javascript
+let SandtFalsk = true;
+let SandtFalsk = false;
+```
+
 Array.
 bliver brugt til at opbevare flere informationer, der ofte ville skulle gentages flere steder. det kunne feks være billeder eller overskrifter på en hjemmeside. 
 ```javascript

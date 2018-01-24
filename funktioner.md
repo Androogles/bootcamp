@@ -28,15 +28,12 @@ Et parameter er lidt det samme som et argument
 
 Eksempel:
 ```javascript 
-function functionName(Parameter1, Parameter2, Parameter3) {
-   // function body
-   // optional return; 
+// Parameterne bliver defineret her.
+function argument(Parameter1, Parameter2) {
+    return Parameter1 + Parameter2;
 }
-
-// Argumetet til parameterne, i samme rækkefølge
-functionName (152);
-functionName (358);
-functionName (468);
+// Argumetet/værdien til parameterne, bliver defineret her.
+console.log(argument(125, 156))
 ```   
 
 Beskriv hvad returværdier, og vis et kodeeksempel hvor der benyttes returværdier ??

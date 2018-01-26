@@ -1,0 +1,15 @@
+body {
+    background-image:url("images/starwarsbackground.jpg");
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Supermercado One', cursive;
+    color:#ffff00;
+}
+
+p {
+    line-height: 25px;
+    font-family: 'Supermercado One', cursive;
+    color: #ffff00;
+}

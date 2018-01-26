@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,14 +19,51 @@
     <script>
         fetch('https://swapi.co/api/people/')
             .then((response) => {
-                return response.json();
+
+                if (response.status == 200) {
+                    return response.json();
+                } else {
+                    throw new Error("Noget gik galt...");
+                }
             })
+
             .then((json) => {
                 let content = document.getElementById('content');
-                let h1 = document.createElement('h1');
-                h1.textContent = json.results[0].name;
-                content.appendChild(h1);
+
+                json.results.forEach(person => {
+                    let h1 = document.createElement('h1');
+                    h1.textContent = person.name;
+                    let p = document.createElement('p');
+
+                    // Eye Color
+                    p.appendChild(document.createTextNode(`Eye Color: ${person.eye_color}`))
+                    p.appendChild(document.createElement('br'));
+
+                    // Height
+                    p.appendChild(document.createTextNode(`Height: ${person.height}`))
+                    p.appendChild(document.createElement('br'));
+
+                    // Skin Color
+                    p.appendChild(document.createTextNode(`Skin Color: ${person.skin_color}`))
+                    p.appendChild(document.createElement('br'));
+
+                    // Birth Year
+                    p.appendChild(document.createTextNode(`Birth Year: ${person.birth_year}`))
+                    p.appendChild(document.createElement('br'));
+
+                    // Gender
+                    p.appendChild(document.createTextNode(`Gender: ${person.gender}`))
+                    p.appendChild(document.createElement('br'));
+
+                    // Homeworld
+                    p.appendChild(document.createTextNode(`Homeworld: ${person.homeworld}`))
+
+
+                    content.appendChild(h1);
+                    content.appendChild(p);
+                });
             })
+
             .catch(function (error) {
                 console.log(error);
             });
